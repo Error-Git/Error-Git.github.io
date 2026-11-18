@@ -1,0 +1,55 @@
+.project {
+    padding: 1rem 0;
+}
+
+.overlapping-images {
+    position: relative;
+    width: 50%;
+    margin: 0;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.overlapping-images img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+}
+
+.overlapping-images img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+}
+
+.project-description {
+    width: 50%;
+}
+
+#title-phone {
+    display: none;
+}
+
+#title-computer {
+    display: block;
+}
+
+@media only screen and (max-width: 700px) {
+    #title-phone {
+        display: block;
+    }
+
+    #title-computer {
+        display: none;
+    }
+
+    .overlapping-images {
+        width: 100%;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+}
