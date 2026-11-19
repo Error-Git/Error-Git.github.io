@@ -6,7 +6,7 @@ const TILE_SOURCES = [
     "./assets/background/tile2.png",
 ];
 
-const TILE_SIZE = 64;
+const TILE_SIZE = 128;
 const DX = -0.5;
 const DY = 0.5;
 

@@ -9,6 +9,11 @@ body {
     align-items: center;
 }
 
+body>* {
+    background-color: aliceblue;
+    color: rgb(56, 55, 55);
+}
+
 /* || */
 
 
