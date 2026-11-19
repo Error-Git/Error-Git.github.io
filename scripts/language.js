@@ -13,12 +13,15 @@ function changeLang() {
 
     if (localStorage.getItem("lang") === "sv") {
         localStorage.setItem("lang", "en");
+        document.documentElement.setAttribute('lang', 'en');
     } else {
         localStorage.setItem("lang", "sv");
+        document.documentElement.setAttribute('lang', 'sv');
     }
 }
 
 
 if (localStorage.getItem("lang") === "sv") {
     toggleLang();
+    document.documentElement.setAttribute('lang', 'sv');
 }
