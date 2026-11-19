@@ -14,12 +14,13 @@
     <canvas id="background"></canvas>
 
     <header id="header" class="rounded-bottom-border box-shadow">
-        <a href="index.html">
+        <button id="cv-btn" onclick="loadPage('pages/cv.html')">
             <h3>CV</h3>
-        </a>
-        <a href="portfolio.html">
+        </button>
+
+        <button id="portfolio-btn" onclick="loadPage('pages/portfolio.html')">
             <h3>Portfolio</h3>
-        </a>
+        </button>
 
         <button onclick="darkMode()">
             <span class="lang">Darkmode</span>
@@ -32,86 +33,10 @@
     </header>
 
     <main id="main" class="rounded-border box-shadow">
-        <article id="title" class="bottom-border">
-            <h1>Error-Git</h1>
-        </article>
 
-        <article id="about-me">
-            <h2>About Me</h2>
-
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ipsum dicta quasi sed vitae quas
-                asperiores ipsam molestias? Officia aliquid maxime suscipit nihil beatae voluptatem modi ullam quas
-                officiis molestias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat adipisci enim
-                magni aperiam fuga consectetur voluptates. Velit nihil, dicta enim, nesciunt cumque molestias beatae
-                officiis error dolore perspiciatis natus vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Repellendus dolores velit repudiandae. Amet maiores repellat nulla! Veniam illum quia, voluptatum fuga
-                iure, dolore odio beatae dolor delectus earum natus minima.
-            </p>
-        </article>
-
-        <article id="skills">
-            <h2>Skills</h2>
-
-            <div class="flexbox">
-                <section id="prog-langs">
-                    <h3>Programming languages</h3>
-
-                    <ul>
-                        <li>
-                            Placeholder
-                        </li>
-                        <li>
-                            Placeholder
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="professions">
-                    <h3>Professions</h3>
-                    <ul>
-                        <li>
-                            Placeholder
-                        </li>
-                        <li>
-                            Placeholder
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </article>
-
-        <article id="experiences-hobbies">
-            <div class="flexbox">
-                <section id="experiences">
-                    <h2>Experiences</h2>
-
-                    <ul>
-                        <li>
-                            Placeholder
-                        </li>
-                        <li>
-                            Placeholder
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="hobbies">
-                    <h2>Hobbies</h2>
-
-                    <ul>
-                        <li>
-                            Placeholder
-                        </li>
-                        <li>
-                            Placeholder
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </article>
     </main>
 
+    <script src="scripts/loadPage.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/language.js"></script>
     <script src="scripts/background.js"></script>
