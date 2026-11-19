@@ -7,4 +7,10 @@ async function loadPage(url) {
     const response = await fetch(url);
 
     main.innerHTML = await response.text();
+
+    localStorage.setItem("page", `${url}`);
 }
+
+
+const saved_page = localStorage.getItem("page") || "pages/cv.html";
+loadPage(saved_page);
