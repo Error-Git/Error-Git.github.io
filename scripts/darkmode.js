@@ -1,5 +1,5 @@
 const header = document.getElementById("header");
-const main = document.getElementById("main");
+// const main = document.getElementById("main"); | already declared in loadPage.js
 
 function toggleDarkMode() {
     main.classList.toggle("dark-mode");
