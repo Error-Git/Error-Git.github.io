@@ -20,6 +20,10 @@ body>* {
     visibility: visible;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* || */
 
 
@@ -81,17 +85,62 @@ ul {
     flex-direction: row;
 }
 
+h2 {
+    margin: 1rem 0 0.3rem 0;
+}
+
 /* || */
 
 
 /* Header */
 
 header {
-    /* background-color: rgb(251, 251, 240); */
     width: 40rem;
     display: flex;
-    justify-content: space-around;
-    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: inherit;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.header-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.util-btn {
+    background: none;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 0.15rem 0.45rem;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    cursor: pointer;
+    color: inherit;
+}
+
+.util-btn:hover {
+    opacity: 1;
 }
 
 /* || */
@@ -130,7 +179,9 @@ header {
     width: 50%;
 }
 
-#experiences-hobbies {}
+#experiences-hobbies {
+    padding-bottom: 0.5rem;
+}
 
 #experiences {
     width: 50%;
@@ -156,6 +207,23 @@ header {
 
     .flexbox {
         flex-direction: column;
+    }
+
+    #prog-langs {
+        width: 100%;
+    }
+
+    #professions {
+        width: 100%;
+    }
+
+
+    #experiences {
+        width: 100%;
+    }
+
+    #hobbies {
+        width: 100%;
     }
 }
 

@@ -14,22 +14,26 @@
     <canvas id="background"></canvas>
 
     <header id="header" class="rounded-bottom-border box-shadow">
-        <button id="cv-btn" onclick="loadPage('pages/cv.html')">
-            <h3>CV</h3>
-        </button>
+        <nav class="nav-links">
+            <button id="cv-btn" class="nav-link" onclick="loadPage('pages/cv.html')">
+                CV
+            </button>
 
-        <button id="portfolio-btn" onclick="loadPage('pages/portfolio.html')">
-            <h3>Portfolio</h3>
-        </button>
+            <button id="portfolio-btn" class="nav-link" onclick="loadPage('pages/portfolio.html')">
+                Portfolio
+            </button>
+        </nav>
 
-        <button onclick="darkMode()">
-            <span class="lang">Dark mode</span>
-            <span class="lang visible-toggle">Mörkt läge</span>
-        </button>
+        <div class="header-controls">
+            <button class="util-btn" onclick="darkMode()">
+                <span class="lang">Dark mode</span>
+                <span class="lang visible-toggle">Mörkt läge</span>
+            </button>
 
-        <button onclick="changeLang()">
-            EN / SV
-        </button>
+            <button class="util-btn" onclick="changeLang()">
+                EN / SV
+            </button>
+        </div>
     </header>
 
     <main id="main" class="rounded-border box-shadow">
