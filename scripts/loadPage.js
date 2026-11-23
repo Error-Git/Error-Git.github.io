@@ -8,6 +8,10 @@ async function loadPage(url) {
 
     main.innerHTML = await response.text();
 
+    if (localStorage.getItem("lang") === "sv") {
+        toggleLang();
+    }
+
     localStorage.setItem("page", `${url}`);
 }
 
