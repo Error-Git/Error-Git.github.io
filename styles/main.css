@@ -1,5 +1,9 @@
 /* Base: */
 
+:root {
+    --border-color: rgb(53, 53, 53);
+}
+
 html,
 body {
     margin: 0;
@@ -22,6 +26,7 @@ body>* {
 /* Logic */
 
 .dark-mode {
+    --border-color: aliceblue;
     background-color: rgb(56, 55, 55);
     color: aliceblue;
 }
@@ -44,11 +49,11 @@ body>* {
 }
 
 .bottom-border {
-    border-bottom: 2px solid rgb(53, 53, 53);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .top-border {
-    border-top: 2px solid rgb(53, 53, 53);
+    border-top: 2px solid var(--border-color);
 }
 
 .box-shadow {
